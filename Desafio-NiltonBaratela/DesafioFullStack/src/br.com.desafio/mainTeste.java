@@ -1,0 +1,5 @@
+@Path
+
+public class mainTeste {
+
+}

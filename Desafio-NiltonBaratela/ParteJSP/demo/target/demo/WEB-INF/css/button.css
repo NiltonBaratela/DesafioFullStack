@@ -1,0 +1,49 @@
+.button{
+    border-style: none;
+    height: 40px;
+    padding: 6px 12px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+}
+.button.blue.initial{
+    position: relative;
+    width: 30vw;
+    height: 5vw;
+    margin: 20px 85%;
+} 
+
+.button.home{
+    position: absolute;
+    padding: 2;
+    margin-left: 1%;
+    left: 0;
+} 
+
+.button.blue{
+    background-color: #1fb6ff;
+}
+.button.blue.form{
+    position: absolute;
+    background-color: #1fb6ff;
+    margin-top: -60px;
+    margin-left: 15%;
+    line-height: 40px;
+    width: 12vw;
+    height: 3vw;
+    padding: 0;
+}
+
+.button.green{
+    background-color: #13ce66;
+}
+
+.button.red{
+    background-color: #ff4949;
+}
+
+.button:hover{
+    box-shadow: inset 450px 0 0  #00000055;
+}

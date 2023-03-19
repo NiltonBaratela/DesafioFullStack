@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/records.css">
+        <link rel="stylesheet" href="css/modal.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <script src="script.js" defer>
+        </script>
+        
+        <title>Lista Fornecedores</title>
+</head>
+<body>
+        <header>
+                <form action='index.jsp'>
+                        <button type="submit" class="button home"
+                        onclick="cadastroEmpresa.html"><i  type="submit" class="fa fa-home"></i></button> 
+		</form>
+                <h1>Fornecedores</h1>
+        </header>
+        <main>
+                <button type="button" class="button blue" id="cadastrarEmpresa">Cadastrar Fornecedor</button>
+                <table class="records">
+                        <thead>
+                                <tr>
+                                        <th>Nome</th>
+                                        <th>CPF/CNPJ</th>
+                                        <th>E-Mail</th>
+                                        <th>CEP</th>
+                                        <th>Ação</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                        <td>Nilton LTda.</td>
+                                        <td>12345678907</td>
+                                        <td>niltonbaratela@gmail.com</td>
+                                        <td>12345678</td>
+                                        <td><button type="button" class="button green">Editar</button>
+                                        <button type="button" class="button red">Excluir</button></td>
+                                </tr>
+                                
+                                <tr>
+                                        <td>Nilton LTda.</td>
+                                        <td>12345678907</td>
+                                        <td>niltonbaratela@gmail.com</td>
+                                        <td>12345678</td>
+                                        <td><button type="button" class="button green">Editar</button>
+                                        <button type="button" class="button red">Excluir</button></td>
+                                </tr>
+
+                                <tr>
+                                        <td>Nilton LTda.</td>
+                                        <td>12345678907</td>
+                                        <td>niltonbaratela@gmail.com</td>
+                                        <td>12345678</td>
+                                        <td><button type="button" class="button green">Editar</button>
+                                        <button type="button" class="button red">Excluir</button></td>
+                                </tr>
+                        </tbody>
+                </table>
+                <div class="modal" id="modal">
+                        <div class="modal-content">
+                                <header class="modal-header" id="modalClose">
+                                        <h2>Nova Empresa</h2>
+                                        <span class="modal-close">&#10006;</span>
+                                </header>
+                                <form class="modal-form">
+                                        <input type="text" class="modal-field" placeholder="Nome Fantasia">
+                                        <input type="text" class="modal-field" placeholder="CNPJ">
+                                        <input type="text" class="modal-field" placeholder="CEP">
+                                </form>
+                                <footer class="modal-footer">
+                                        <button class="button green">Salvar</button>
+                                        <button class="button blue">Cancelar</button>
+                                </footer>
+                        </div>
+                </div>
+        </main>
+        <footer>
+                Copyright &copy; Candidato Nilton Baratela
+        </footer>
+</body>
+</html>

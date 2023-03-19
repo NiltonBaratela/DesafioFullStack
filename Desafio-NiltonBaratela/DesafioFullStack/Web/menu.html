@@ -1,0 +1,62 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Menu</title>
+</head>
+<body>
+
+    <script src="https://www.javapoly.com/javapoly.js"></script>
+
+        <!-- Write your Java code -->
+        <script type="text/java">
+        import com.javapoly.dom.Window;
+        import java.util.List;
+        import br.com.desafio.empresaDao;
+        
+        
+        EmpresaDao empresaDao = new EmpresaDao();
+
+        List<Empresa> list = empresaDao.getEmpresas();
+
+
+        request.setAttribute("list", list);
+    </script>
+
+    <header>
+            <form action='index.html'>
+                    <button type="submit" class="button home" id="cadastrarEmpresa" 
+                    onclick="cadastroEmpresa.html"><i  type="submit" class="fa fa-home"></i></button> 
+    </form>
+        <h1>Empresas</h1>
+    </header>
+        <thead>
+                <tr>
+                        <th>Nome Fantasia</th>
+                        <th>CNPJ</th>
+                        <th>CEP</th>
+                        <th>Ação</th>
+                </tr>
+        </thead>
+        <tbody>
+        <c:forEach items="${list}" var="empresa">
+                <tr>
+                        <td>${empresa.getNomeFantasia()}</td>
+                        <td>${empresa.getNomeFantasia()}</td>
+                        <td>${empresa.getNomeFantasia()}</td>
+                        <td><button type="button" class="button green">Editar</button>
+                        <button type="button" class="button red">Excluir</button></td>
+                </tr>
+        </c:forEach>
+    <footer>
+            Copyright &copy; Candidato Nilton Baratela
+    </footer>
+</body>
+</html>
